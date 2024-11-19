@@ -23,9 +23,13 @@ const revealSection = () => {
     });
 };
 
-function to_project1(){
-    window.location.replace(" https://github.com/harini-komal/Assignments");  
+function to_frame(){
+    window.location.replace("https://harini-komal.github.io/Frame/");  
 }
+function to_bucketly(){
+    window.location.replace("https://harini-komal.github.io/bucketly/");
+}
+
 
 window.addEventListener('scroll', revealSection);
 revealSection(); // Initial check for visibility
