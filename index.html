@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: rgba(0, 0, 0, 0.6);">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Introduction Section-->
+
+    <!-- About Section -->
+    <section id="about" class="d-flex align-items-center justify-content-center text-center text-white position-relative"
+     style="height: 100vh; background-image: url('lavender.jpg'); background-size: cover; background-position: center;">
+        <div class="overlay position-absolute top-0 bottom-0 start-0 end-0 bg-dark opacity-50"></div>
+        <div class="container position-relative z-index-1">
+            <h1 class="display-3 animated-text">About Me</h1>
+            <p class="lead">I'm Harini R Kashyap,from Electronics and Communnication Department ,specialization in Advanced Communication Technolog field.<br>
+            Graduating at <a href="https://mvjce.edu.in/">MVJ College of Engineering</a> since 2023.<br> </p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="bg-dark text-white py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">My Projects</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4" onclick="to_project1()">
+                    <div class="card shadow-lg project-card">
+                        <img src="project1.jpg" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 1</h5>
+                            <p class="card-text">A description of Project 1.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card shadow-lg project-card">
+                        <img src="project2.jpg" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 2</h5>
+                            <p class="card-text">A description of Project 2.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card shadow-lg project-card">
+                        <img src="project3.jpg" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 3</h5>
+                            <p class="card-text">A description of Project 3.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <footer id="contact" class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p class="mb-0">Contact me at: <a href="miss.hariniravikumar@gmail.com" class="text-white">miss.hariniravikumar@gmail.com
+            <a href="https://x.com/HariniR2004">X</a>
+        <a href="https://www.linkedin.com/in/harini-ravi-kumar/">Linkedin</a></p>
+        </div><hr>
+        <div>
+        <p>Developed by Harini R (Designed by ❤)</p></div>
+    </footer>
+
+    <!-- Bootstrap JS and Dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="scripts.js"></script>
+</body>
+</html>

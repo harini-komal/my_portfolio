@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* Navbar styling */
+.navbar-nav .nav-link {
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #00bcd4;
+}
+
+#into {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 100vh;
+    background-image: url('abstract-pastel-pink-color-paint-pastel-blue-background.jpg'); 
+    background-size: cover; 
+    background-position: center;
+}
+/* About Section */
+#about {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 100vh;
+    background-image: url('lavender.jpg'); 
+    background-size: cover; 
+    background-position: center;
+}
+
+#about .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(246, 243, 243);
+}
+
+#about h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    animation: fadeInUp 2s ease-out;
+}
+
+#about p {
+    font-size: 1.5rem;
+}
+
+/* Project Cards */
+.project-card {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: rgba(255, 255, 255, 0.277);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-body {
+    text-align: left;
+}
+
+/* Contact Section */
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    background: #444;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer a {
+    color: #00bcd4;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+/* Scroll Reveal */
+.visible {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+.invisible {
+    opacity: 0;
+}
+
+/* Keyframe Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #about h1 {
+        font-size: 2.5rem;
+    }
+    .project-card {
+        margin-bottom: 20px;
+    }
+    .card-img-top {
+        height: 150px;
+    }
+}
